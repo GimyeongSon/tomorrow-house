@@ -1,15 +1,21 @@
 * {
   margin: 0;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: $font-main;
+  // 폰트가 부드럽게 랜더링 된다.
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  // ---------------------------
   box-sizing: border-box;
 }
 
 html {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: $font-main;
+  font-size: $font-size-16; /* 기본 폰트 사이즈 지정 */
 }
 
 body {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: $font-main;
+  color: $primary; /* 기본 글씨 색상 지정 */
 }
 
 h1 {
