@@ -1,0 +1,25 @@
+@mixin responsive($screen) {
+  @if ($screen == 'T') {
+    @media screen and (min-width: $md-breakpoint) {
+      @content;
+    }
+  }
+  @if ($screen == 'D') {
+    @media screen and (min-width: $lg-breakpoint) {
+      @content;
+    }
+  }
+}
+
+.section {
+  @include responsive(T) {
+    color: red;
+    .ic-close {
+      font-size: 20px;
+    }
+  }
+
+  @include responsive(D) {
+    color: blue;
+  }
+}
