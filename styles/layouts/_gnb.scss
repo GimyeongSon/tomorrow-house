@@ -15,16 +15,12 @@
     color: $secondary;
   }
 
-  &-menu-button {
-    color: $blue;
-  }
-
   &-right {
     .button-group {
       @include flexbox(end);
     }
 
-    .gnb-search-button {
+    .gnb-icon-button.is-search {
       margin-right: 4px;
     }
   }
